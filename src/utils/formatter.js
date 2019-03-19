@@ -72,8 +72,9 @@ export const serializeTimeString = (time: string): string => {
 // Example:
 // parseDate('2016-01-01') parses to a Date corresponding to
 // 2016-01-01T00:00:00.000Z.
-export const parseDate = (date: string): Date => {
-  return new Date(date)
+export const parseDate = (date: string): string => {
+  return date
+  // return new Date(date)
 }
 
 // Serializes a Date into a RFC 3339 compliant date-string
